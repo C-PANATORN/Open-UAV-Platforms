@@ -7,7 +7,7 @@ All contributions are welcome! **Updated 5 May 2025**
 ## Flight Controllers
 
 Comparison of MCUs, sensors and licenses for OSH flight controller platforms.
-_All platforms have IMUs. Interfaces: UART, PWM, I2C._ [1](#references)
+_All platforms have IMUs. Interfaces: UART, PWM, I2C._ [[1]](#references)
 
 | Platform        | MCU           | Sensors      | License              | Interfaces                          |
 |-----------------|---------------|--------------|----------------------|-------------------------------------|
@@ -35,7 +35,7 @@ _All platforms have IMUs. Interfaces: UART, PWM, I2C._ [1](#references)
 
 ## Ground Control Stations (GCS)
 
-Comparison of GCS software and their supported platforms.[2](#references)
+Comparison of GCS software and their supported platforms.[[2]](#references)
 
 | GCS                      | Lastest Release                                                                  | Supported Platforms          | OS (L/W/M)   | Protocol(s)        | Language / Framework   | License                   |
 |--------------------------|----------------------------------------------------------------------------------|------------------------------|--------------|--------------------|------------------------|---------------------------|
@@ -58,13 +58,13 @@ Comparison of GCS software and their supported platforms.[2](#references)
 
 ## UAV Simulators
 
-Comparison of features for widely-used UAV simulators.[3](#references)
+Comparison of features for widely-used UAV simulators.[[3]](#references)
 
 | Simulator                   | Lastest Release|  Physics Engine                     | Rendering     | OS (L/W/M)  | Interfaces                                        | (S/H)ITL           | License                 | 
 |-----------------------------|----------------|-------------------------------------|---------------|-------------|---------------------------------------------------|--------------------|-------------------------|
 | Gazebo Classic **(EOL)**    |[v11.15.1](https://github.com/gazebosim/gazebo-classic/tags)          | ODE, Bullet, DART, Simbody          | OGRE          | ✓/◐/✓ | ROS 1/2, C++, RL                                  | PX4, ArduPilot, CF | Apache-2.0              | 
 | Gazebo                      |[gz-sim9_9.0.0](https://github.com/gazebosim/gz-sim/releases)         | Bullet, DART, TPE                   | OGRE          | ✓/◐/✓ | ROS 1/2, C++, Python, RL                          | PX4, ArduPilot, CF | Apache-2.0              |
-| Isaac (Pegasus, Aerial Gym) |[v2.0.0](https://github.com/ntnu-arl/aerial_gym_simulator/releases)   | NVIDIA® PhysX, Flex                 | Vulkan        | Y/N/N  | ROS 1/2, Python, RL                               | Pegasus: PX4      | Proprietary (BSD 3)     |
+| Isaac (Pegasus, Aerial Gym) |[v2.0.0](https://github.com/ntnu-arl/aerial_gym_simulator/releases)   | NVIDIA® PhysX, Flex                 | Vulkan        | ✓/✕/✕ | ROS 1/2, Python, RL                               | Pegasus: PX4      | Proprietary (BSD 3)     |
 | Webots                      |[R2025a](https://github.com/cyberbotics/webots/releases)              | ODE                                 | OpenGL        | ✓/✕/✕ | ROS 1/2, C/C++, Python, MATLAB, Java              | ArduPilot, CF      | Apache-2.0              |
 | CoppeliaSim                 |[v4.9.0-rev6](https://github.com/CoppeliaRobotics/coppeliaSimLib/tags)| Bullet, ODE, Vortex, Newton, MuJoCo | OpenGL        | ✓/✓/✓ | ROS 1/2, C/C++, Python, MATLAB, Java, Lua, Octave | —                 | GNU GPL & Commercial    |
 | AirSim **(EOL)**            |[v1.8.1](https://github.com/Microsoft/AirSim/releases)                | NVIDIA® PhysX                       | Unreal, Unity | ✓/✓/✓ | ROS 1, C++, Python, C#, Java, RL                  | PX4, ArduPilot     | MIT                     |
