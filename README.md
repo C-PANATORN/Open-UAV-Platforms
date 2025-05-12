@@ -1,6 +1,6 @@
 # Open-UAV-Platforms
 A list of Open-Source Hardware (OSH) Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.  
-All contributions are welcome! **Updated 5 May 2025**
+All contributions are welcome! **Updated 13 May 2025**
 
 ---
 
