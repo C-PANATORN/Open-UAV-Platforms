@@ -75,10 +75,8 @@ Comparison of features for widely-used UAV simulators.[[3]](#references)
 | MATLAB UAV Toolbox          |[R2024b](https://www.mathworks.com/help/uav/release-notes.html)       | MATLAB                              | Unreal        | ✓/✓/✓ | ROS 2, MATLAB                                     | PX4                | Proprietary, Commercial |
 
 > **Notes:**
-> - Order for OS is Linux/Windows/macOS, with ✓ = supported, ◦ = partial, ✕ = not supported.  
+> - Order for OS is Linux/Windows/macOS, with ✓ = supported, ◐ = partial, ✕ = not supported.  
 > - EOL = End of Life Service.  
-> - RotorTM has no specific release version; hence *rotortm2023*.  
-> - All other entries match their official latest release.
 
 ---
 
