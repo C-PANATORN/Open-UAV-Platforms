@@ -1,13 +1,13 @@
 # Open-UAV-Platforms
-A list of Open-Source Hardware (OSH) Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.
+A list of Open-Source Hardware (OSH) Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.  
 All contributions are welcome! **Updated 5 May 2025**
 
 ---
 
 ## Flight Controllers
 
-Comparison of MCUs, sensors and licenses for OSH flight controller platforms. 
-_All platforms have IMUs. Interfaces: UART, PWM, I2C._ [1].
+Comparison of MCUs, sensors and licenses for OSH flight controller platforms.
+_All platforms have IMUs. Interfaces: UART, PWM, I2C._ [1](#references)
 
 | Platform        | MCU           | Sensors      | License              | Interfaces                          |
 |-----------------|---------------|--------------|----------------------|-------------------------------------|
@@ -35,7 +35,7 @@ _All platforms have IMUs. Interfaces: UART, PWM, I2C._ [1].
 
 ## Ground Control Stations (GCS)
 
-Comparison of GCS software and their supported platforms [2].
+Comparison of GCS software and their supported platforms.[2](#references)
 
 | GCS                      | Lastest Release                                                                  | Supported Platforms          | OS (L/W/M)   | Protocol(s)        | Language / Framework   | License                   |
 |--------------------------|----------------------------------------------------------------------------------|------------------------------|--------------|--------------------|------------------------|---------------------------|
@@ -58,7 +58,7 @@ Comparison of GCS software and their supported platforms [2].
 
 ## UAV Simulators
 
-Comparison of features for widely-used UAV simulators [3].
+Comparison of features for widely-used UAV simulators.[3](#references)
 
 | Simulator                   | Lastest Release|  Physics Engine                     | Rendering     | OS (L/W/M)  | Interfaces                                        | (S/H)ITL           | License                 | 
 |-----------------------------|----------------|-------------------------------------|---------------|-------------|---------------------------------------------------|--------------------|-------------------------|
