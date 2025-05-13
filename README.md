@@ -2,6 +2,22 @@
 A list of Open-Source Hardware (OSH) Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.  
 All contributions are welcome! **Updated 5 May 2025**
 
+
+---
+
+## UAV Mesh Models (URDF)
+
+List of various UAV Mesh Models
+
+| Model           | Supported Platforms       | Plugins                | Sensors   | License        |
+| --------------- | ------------------------- | ---------------------- | --------- | -------------- |
+| Iris            | Gazebo, ROS 1/2, PX4 SITL | gazebo_ros_control     | b, m      | BSD-2-Clause   |
+| Matrice 100     | Gazebo, ROS 1/2, PX4 SITL | dji_gazebo_plugin      | b, m      | CC-BY-SA-3.0   |
+| Parrot Bebop 2  | Gazebo, ROS 1/2           | bebop_gazebo_plugin    | b, m      | CC-BY-4.0      |
+
+> **Notes:**  
+> - b: barometer; m: magnetometer  
+
 ---
 
 ## Flight Controllers
