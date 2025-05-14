@@ -1,13 +1,12 @@
 # Open-UAV-Platforms
-A list of Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.  
-All contributions are welcome! **Updated 5 May 2025**
+A list of Open-Source Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.  
+All contributions are welcome! **Updated 14 May 2025**
 
 ---
 
 ## Flight Controllers
-
 Comparison of MCUs, sensors and licenses for Open-Source Hardware (OSH) flight controller platforms.
-_All platforms have IMUs. Interfaces: UART, PWM, I2C._ [1](#references)
+_All platforms have IMUs. Interfaces: UART, PWM, I2C._ [[1]](#references)
 
 | Platform        | MCU           | Sensors      | Interfaces                          | License             |
 |-----------------|---------------|--------------|-------------------------------------|---------------------|
@@ -34,7 +33,7 @@ _All platforms have IMUs. Interfaces: UART, PWM, I2C._ [1](#references)
 ---
 ## Flight Control Firmware
 
-Comparison of Open-Source Software (OSS) Flight Control Firmware. [1](#references)
+Comparison of Open-Source Software (OSS) Flight Control Firmware. [[1]](#references)
 
 | Platform    | Latest Release | Language        | OS                       | License / FC / Doc / Config Tool       |
 |-------------|----------------|-----------------|--------------------------|----------------------------------------|
@@ -53,7 +52,7 @@ Comparison of Open-Source Software (OSS) Flight Control Firmware. [1](#reference
 
 ## Ground Control Stations (GCS)
 
-Comparison of GCS software and their supported platforms.[2](#references)
+Comparison of GCS software and their supported platforms.[[2]](#references)
 
 | GCS                      | Lastest Release                                                                  | Supported Platforms          | OS (L/W/M)   | Protocol(s)        | Language / Framework   | License                   |
 |--------------------------|----------------------------------------------------------------------------------|------------------------------|--------------|--------------------|------------------------|---------------------------|
@@ -76,13 +75,13 @@ Comparison of GCS software and their supported platforms.[2](#references)
 
 ## UAV Simulators
 
-Comparison of features for widely-used UAV simulators.[3](#references)
+Comparison of features for widely-used UAV simulators.[[3]](#references)
 
 | Simulator                   | Lastest Release|  Physics Engine                     | Rendering     | OS (L/W/M)  | Interfaces                                        | (S/H)ITL           | License                 | 
 |-----------------------------|----------------|-------------------------------------|---------------|-------------|---------------------------------------------------|--------------------|-------------------------|
 | Gazebo Classic **(EOL)**    |[v11.15.1](https://github.com/gazebosim/gazebo-classic/tags)          | ODE, Bullet, DART, Simbody          | OGRE          | ✓/◐/✓ | ROS 1/2, C++, RL                                  | PX4, ArduPilot, CF | Apache-2.0              | 
 | Gazebo                      |[gz-sim9_9.0.0](https://github.com/gazebosim/gz-sim/releases)         | Bullet, DART, TPE                   | OGRE          | ✓/◐/✓ | ROS 1/2, C++, Python, RL                          | PX4, ArduPilot, CF | Apache-2.0              |
-| Isaac (Pegasus, Aerial Gym) |[v2.0.0](https://github.com/ntnu-arl/aerial_gym_simulator/releases)   | NVIDIA® PhysX, Flex                 | Vulkan        | Y/N/N  | ROS 1/2, Python, RL                               | Pegasus: PX4      | Proprietary (BSD 3)     |
+| Isaac (Pegasus, Aerial Gym) |[v2.0.0](https://github.com/ntnu-arl/aerial_gym_simulator/releases)   | NVIDIA® PhysX, Flex                 | Vulkan        | ✓/✕/✕ | ROS 1/2, Python, RL                               | Pegasus: PX4      | Proprietary (BSD 3)     |
 | Webots                      |[R2025a](https://github.com/cyberbotics/webots/releases)              | ODE                                 | OpenGL        | ✓/✕/✕ | ROS 1/2, C/C++, Python, MATLAB, Java              | ArduPilot, CF      | Apache-2.0              |
 | CoppeliaSim                 |[v4.9.0-rev6](https://github.com/CoppeliaRobotics/coppeliaSimLib/tags)| Bullet, ODE, Vortex, Newton, MuJoCo | OpenGL        | ✓/✓/✓ | ROS 1/2, C/C++, Python, MATLAB, Java, Lua, Octave | —                 | GNU GPL & Commercial    |
 | AirSim **(EOL)**            |[v1.8.1](https://github.com/Microsoft/AirSim/releases)                | NVIDIA® PhysX                       | Unreal, Unity | ✓/✓/✓ | ROS 1, C++, Python, C#, Java, RL                  | PX4, ArduPilot     | MIT                     |
@@ -93,10 +92,8 @@ Comparison of features for widely-used UAV simulators.[3](#references)
 | MATLAB UAV Toolbox          |[R2024b](https://www.mathworks.com/help/uav/release-notes.html)       | MATLAB                              | Unreal        | ✓/✓/✓ | ROS 2, MATLAB                                     | PX4                | Proprietary, Commercial |
 
 > **Notes:**
-> - Order for OS is Linux/Windows/macOS, with ✓ = supported, ◦ = partial, ✕ = not supported.  
+> - Order for OS is Linux/Windows/macOS, with ✓ = supported, ◐ = partial, ✕ = not supported.  
 > - EOL = End of Life Service.  
-> - RotorTM has no specific release version; hence *rotortm2023*.  
-> - All other entries match their official latest release.
 
 ---
 
