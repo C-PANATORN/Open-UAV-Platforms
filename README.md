@@ -35,17 +35,17 @@ _All platforms have IMUs. Interfaces: UART, PWM, I2C._ [[1]](#references)
 
 Comparison of Open-Source Software (OSS) Flight Control Firmware. [[1]](#references)
 
-| Platform    | Latest Release | Language        | OS                       | License / FC / Doc / Config Tool       |
-|-------------|----------------|-----------------|--------------------------|----------------------------------------|
-| Hack flight | —              | C++             | None                     | GPL-3.0  / – / Lesser GPL-3.0          |
-| Cleanflight | [v2.5.0](https://github.com/cleanflight/cleanflight/releases)         | C               | Scheduler                | GPL-3.0  / – / GPL-3.0                 |
-| Betaflight  | [v4.5.2](https://github.com/betaflight/betaflight/releases)           | C               | Scheduler                | GPL-3.0  / – / GPL-3.0                 |
-| INAV        | [v8.0.1](https://github.com/iNavFlight/inav/releases)                 | C               | Scheduler                | GPL-3.0  / – / GPL-3.0                 |
-| LibrePilot  | [v16.09](https://github.com/librepilot/LibrePilot/tags)               | C               | FreeRTOS                 | GPL-3.0  / CC-BY-SA-3.0 / GPL-3.0      |
-| dRonin      | [dRonin 2018-07-29](https://github.com/d-ronin/dRonin/releases)       | C               | PiOS                     | GPL-3.0  / To be determined / –        |
-| ArduPilot   | [v4.5.7](https://github.com/ArduPilot/ardupilot/releases)             | C/C++           | ChibiOS / NuttX / Linux  | GPL-3.0  / CC-BY-SA-3.0 / GPL-3.0      |
-| PX4         | [v1.15.4](https://github.com/PX4/PX4-Autopilot/releases)              | C/C++           | NuttX                    | BSD 2-Clause / CC-BY-SA-3.0 / GPL-3.0  |
-| Paparazzi   | [v6.4.0](https://github.com/paparazzi/paparazzi/releases)             | C/Python        | ChibiOS / Scheduler      | GPL-3.0  / GFDL / GPL-3.0              |
+| Platform    | Latest Release | OS                       | Language        | License / FC / Doc / Config Tool       |
+|-------------|----------------|--------------------------|-----------------|----------------------------------------|
+| Hack flight | —              | None                     | C++             | GPL-3.0  / – / Lesser GPL-3.0          |
+| Cleanflight | [v2.5.0](https://github.com/cleanflight/cleanflight/releases)         | Scheduler                | C               | GPL-3.0  / – / GPL-3.0                 |
+| Betaflight  | [v4.5.2](https://github.com/betaflight/betaflight/releases)           | Scheduler                | C               | GPL-3.0  / – / GPL-3.0                 |
+| INAV        | [v8.0.1](https://github.com/iNavFlight/inav/releases)                 | Scheduler                | C               | GPL-3.0  / – / GPL-3.0                 |
+| LibrePilot  | [v16.09](https://github.com/librepilot/LibrePilot/tags)               | FreeRTOS                 | C               | GPL-3.0  / CC-BY-SA-3.0 / GPL-3.0      |
+| dRonin      | [dRonin 2018-07-29](https://github.com/d-ronin/dRonin/releases)       | PiOS                     | C               | GPL-3.0  / To be determined / –        |
+| ArduPilot   | [v4.5.7](https://github.com/ArduPilot/ardupilot/releases)             | ChibiOS / NuttX / Linux  | C/C++           | GPL-3.0  / CC-BY-SA-3.0 / GPL-3.0      |
+| PX4         | [v1.15.4](https://github.com/PX4/PX4-Autopilot/releases)              | NuttX                    | C/C++           | BSD 2-Clause / CC-BY-SA-3.0 / GPL-3.0  |
+| Paparazzi   | [v6.4.0](https://github.com/paparazzi/paparazzi/releases)             | ChibiOS / Scheduler      | C/Python        | GPL-3.0  / GFDL / GPL-3.0              |
 
 
 ----
