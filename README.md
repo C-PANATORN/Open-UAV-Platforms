@@ -1,37 +1,54 @@
 # Open-UAV-Platforms
-A list of Open-Source Hardware (OSH) Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.  
-All contributions are welcome! **Updated 13 May 2025**
+A list of Open-Source Flight Controllers, Ground Control Stations (GCS), and UAV Simulators.  
+All contributions are welcome! **Updated 14 May 2025**
 
 ---
 
 ## Flight Controllers
-
-Comparison of MCUs, sensors and licenses for OSH flight controller platforms.
+Comparison of MCUs, sensors and licenses for Open-Source Hardware (OSH) flight controller platforms.
 _All platforms have IMUs. Interfaces: UART, PWM, I2C._ [[1]](#references)
 
-| Platform        | MCU           | Sensors      | License              | Interfaces                          |
-|-----------------|---------------|--------------|----------------------|-------------------------------------|
-| Pixhawk         | STM32F427     | b, m         | BSD-2-Clause         | c, s, a, pp, sb, ds                 |
-| Pixhawk 2       | STM32F427     | b, m         | CC-BY-SA-3.0         | c, s, a, pp, sb, ds                 |
-| PixRacer        | STM32F427     | b, m         | CC-BY-4.0            | c, pp, sb, ds                       |
-| Pixhawk 3 Pro   | STM32F427     | b, m         | CC-BY-4.0            | c, s, pp, sb, ds                    |
-| PX4 FMUv5 & v6  | STM32F427     | b, m         | CC-BY-4.0            | c, s, a, pp, sb, ds                 |
-| Sparky2         | STM32F405     | b, m         | CC-BY-NC-SA-4.0      | c, pp, sb, ds, da                   |
-| Chimera         | STM32F767     | b, m, p      | GPL-2.0              | c, s, a, da, pp, sb, ds, x, au      |
-| CC3D            | STM32F103     | None         | GPL-3.0              | pp, ds, sb                          |
-| Atom            | STM32F103     | None         | GPL-3.0              | pp, ds, sb                          |
-| APM 2.8         | ATmega2560    | b            | GPL-3.0              | pp, a                               |
-| FlyMaple        | STM32F103     | b, m         | GPL-3.0              | –                                   |
-| Erle-Brain 3    | Raspberry Pi  | b, m         | CC-BY-NC-SA-4.0      | a                                   |
-| PXFmini         | Raspberry Pi  | b, m         | CC-BY-NC-SA-4.0      | a                                   |
-| AeroQuad [d]    | STM32F407     | b, m         | GPL-2.0              | –                                   |
-| Mikrokopter [d] | ATmega644     | b            | –                    | s, pp                               |
-| MatrixPilot [d] | dsPIC33FJ256  | None         | GPL-3.0              | –                                   |
+| Platform        | MCU           | Sensors      | Interfaces                          | License             |
+|-----------------|---------------|--------------|-------------------------------------|---------------------|
+| Pixhawk         | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | BSD-2-Clause        |
+| Pixhawk 2       | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | CC-BY-SA-3.0        |
+| PixRacer        | STM32F427     | b, m         | c, pp, sb, ds                       | CC-BY-4.0           |
+| Pixhawk 3 Pro   | STM32F427     | b, m         | c, s, pp, sb, ds                    | CC-BY-4.0           |
+| PX4 FMUv5 & v6  | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | CC-BY-4.0           |
+| Sparky2         | STM32F405     | b, m         | c, pp, sb, ds, da                   | CC-BY-NC-SA-4.0     |
+| Chimera         | STM32F767     | b, m, p      | c, s, a, da, pp, sb, ds, x, au      | GPL-2.0             |
+| CC3D            | STM32F103     | None         | pp, ds, sb                          | GPL-3.0             |
+| Atom            | STM32F103     | None         | pp, ds, sb                          | GPL-3.0             |
+| APM 2.8         | ATmega2560    | b            | pp, a                               | GPL-3.0             |
+| FlyMaple        | STM32F103     | b, m         | –                                   | GPL-3.0             |
+| Erle-Brain 3    | Raspberry Pi  | b, m         | a                                   | CC-BY-NC-SA-4.0     |
+| PXFmini         | Raspberry Pi  | b, m         | a                                   | CC-BY-NC-SA-4.0     |
+| AeroQuad [d]    | STM32F407     | b, m         | –                                   | GPL-2.0             |
+| Mikrokopter [d] | ATmega644     | b            | s, pp                               | –                   |
+| MatrixPilot [d] | dsPIC33FJ256  | None         | –                                   | GPL-3.0              |
 
 > **Notes:**
 > - b: barometer; m: magnetometer; p: pitot tube sensor c: CAN; s: SPI; a: ADC; pp: PPM; sb: S.BUS; ds: DSM; da: DAC; x: XBEE; au: AUX, [d]: discontinued
 
 ---
+## Flight Control Firmware
+
+Comparison of Open-Source Software (OSS) Flight Control Firmware. [[1]](#references)
+
+| Platform    | Latest Release | Language        | OS                       | License / FC / Doc / Config Tool       |
+|-------------|----------------|-----------------|--------------------------|----------------------------------------|
+| Hack flight | —              | C++             | None                     | GPL-3.0  / – / Lesser GPL-3.0          |
+| Cleanflight | [v2.5.0](https://github.com/cleanflight/cleanflight/releases)         | C               | Scheduler                | GPL-3.0  / – / GPL-3.0                 |
+| Betaflight  | [v4.5.2](https://github.com/betaflight/betaflight/releases)           | C               | Scheduler                | GPL-3.0  / – / GPL-3.0                 |
+| INAV        | [v8.0.1](https://github.com/iNavFlight/inav/releases)                 | C               | Scheduler                | GPL-3.0  / – / GPL-3.0                 |
+| LibrePilot  | [v16.09](https://github.com/librepilot/LibrePilot/tags)               | C               | FreeRTOS                 | GPL-3.0  / CC-BY-SA-3.0 / GPL-3.0      |
+| dRonin      | [dRonin 2018-07-29](https://github.com/d-ronin/dRonin/releases)       | C               | PiOS                     | GPL-3.0  / To be determined / –        |
+| ArduPilot   | [v4.5.7](https://github.com/ArduPilot/ardupilot/releases)             | C/C++           | ChibiOS / NuttX / Linux  | GPL-3.0  / CC-BY-SA-3.0 / GPL-3.0      |
+| PX4         | [v1.15.4](https://github.com/PX4/PX4-Autopilot/releases)              | C/C++           | NuttX                    | BSD 2-Clause / CC-BY-SA-3.0 / GPL-3.0  |
+| Paparazzi   | [v6.4.0](https://github.com/paparazzi/paparazzi/releases)             | C/Python        | ChibiOS / Scheduler      | GPL-3.0  / GFDL / GPL-3.0              |
+
+
+----
 
 ## Ground Control Stations (GCS)
 
@@ -81,7 +98,7 @@ Comparison of features for widely-used UAV simulators.[[3]](#references)
 ---
 
 ## References
-1. Aliane, N. (2024). A Survey of Open-Source UAV Autopilots. Electronics, 13(23), 4785. [https://doi.org/10.3390/electronics13234785.](https://doi.org/10.3390/electronics13234785)
-2. Ebeid, E., Skriver, M., Terkildsen, K.H., Jensen, K. and Schultz, U.P. (2018) A Survey of Open-Source UAV Flight Controllers and Flight Simulators. Microprocessors and Microsystems, 61, 11-20.
+1. Ebeid, E., Skriver, M., Terkildsen, K.H., Jensen, K. and Schultz, U.P. (2018) A Survey of Open-Source UAV Flight Controllers and Flight Simulators. Microprocessors and Microsystems, 61, 11-20.
 [https://doi.org/10.1016/j.micpro.2018.05.002.](https://doi.org/10.1016/j.micpro.2018.05.002)
+2. Aliane, N. (2024). A Survey of Open-Source UAV Autopilots. Electronics, 13(23), 4785. [https://doi.org/10.3390/electronics13234785.](https://doi.org/10.3390/electronics13234785)
 3. Dimmig, C. A., Silano, G., McGuire, K., Gabellieri, C., Hönig, W., Moore, J., & Kobilarov, M. (2024). Survey of simulators for aerial robots: An overview and in‐depth systematic comparisons. IEEE Robotics & Automation Magazine. [https://doi.org/10.1109/MRA.2024.3433171.](https://doi.org/10.1109/MRA.2024.3433171)
