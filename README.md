@@ -8,24 +8,35 @@ All contributions are welcome! **Updated 14 May 2025**
 Comparison of MCUs, sensors and licenses for Open-Source Hardware (OSH) flight controller platforms.
 _All platforms have IMUs. Interfaces: UART, PWM, I2C._ [[1]](#references)
 
-| Platform        | MCU           | Sensors      | Interfaces                          | License             |
-|-----------------|---------------|--------------|-------------------------------------|---------------------|
-| Pixhawk         | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | BSD-2-Clause        |
-| Pixhawk 2       | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | CC-BY-SA-3.0        |
-| PixRacer        | STM32F427     | b, m         | c, pp, sb, ds                       | CC-BY-4.0           |
-| Pixhawk 3 Pro   | STM32F427     | b, m         | c, s, pp, sb, ds                    | CC-BY-4.0           |
-| PX4 FMUv5 & v6  | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | CC-BY-4.0           |
-| Sparky2         | STM32F405     | b, m         | c, pp, sb, ds, da                   | CC-BY-NC-SA-4.0     |
-| Chimera         | STM32F767     | b, m, p      | c, s, a, da, pp, sb, ds, x, au      | GPL-2.0             |
-| CC3D            | STM32F103     | None         | pp, ds, sb                          | GPL-3.0             |
-| Atom            | STM32F103     | None         | pp, ds, sb                          | GPL-3.0             |
-| APM 2.8         | ATmega2560    | b            | pp, a                               | GPL-3.0             |
-| FlyMaple        | STM32F103     | b, m         | –                                   | GPL-3.0             |
-| Erle-Brain 3    | Raspberry Pi  | b, m         | a                                   | CC-BY-NC-SA-4.0     |
-| PXFmini         | Raspberry Pi  | b, m         | a                                   | CC-BY-NC-SA-4.0     |
-| AeroQuad [d]    | STM32F407     | b, m         | –                                   | GPL-2.0             |
-| Mikrokopter [d] | ATmega644     | b            | s, pp                               | –                   |
-| MatrixPilot [d] | dsPIC33FJ256  | None         | –                                   | GPL-3.0              |
+| Platform                  | MCU           | Sensors      | Interfaces                          | License             |
+|---------------------------|---------------|--------------|-------------------------------------|---------------------|
+| Pixhawk                   | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | BSD-2-Clause        |
+| Pixhawk 2                 | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | CC-BY-SA-3.0        |
+| PixRacer                  | STM32F427     | b, m         | c, pp, sb, ds                       | CC-BY-4.0           |
+| Pixhawk 3 Pro             | STM32F427     | b, m         | c, s, pp, sb, ds                    | CC-BY-4.0           |
+| PX4 FMUv5 & v6            | STM32F427     | b, m         | c, s, a, pp, sb, ds                 | CC-BY-4.0           |
+| Holybro Pixhawk 6C        |
+| Holybro Pixhawk 6X        |
+| Holybro Pixhawk 6X PRO    |
+| mRo PixRacerPro
+| 3DR Control Zero Classic
+| 3DR Control Zero H7 OEM
+| 3DR Reference Design Carrier Board
+| 3DR "Stick" Adapter (Carrier Board)
+| Sparky2                   | STM32F405     | b, m         | c, pp, sb, ds, da                   | CC-BY-NC-SA-4.0     |
+| Crazyflie Bolt 1.1        |
+| Chimera                   | STM32F767     | b, m, p      | c, s, a, da, pp, sb, ds, x, au      | GPL-2.0             |
+| CC3D                      | STM32F103     | None         | pp, ds, sb                          | GPL-3.0             |
+| Atom                      | STM32F103     | None         | pp, ds, sb                          | GPL-3.0             |
+| APM 2.8                   | ATmega2560    | b            | pp, a                               | GPL-3.0             |
+| ARK Electronics ARKV6X    |
+| ARK Electronics Pi6X Flow |
+| FlyMaple                  | STM32F103     | b, m         | –                                   | GPL-3.0             |
+| Erle-Brain 3              | Raspberry Pi  | b, m         | a                                   | CC-BY-NC-SA-4.0     |
+| PXFmini                   | Raspberry Pi  | b, m         | a                                   | CC-BY-NC-SA-4.0     |
+| AeroQuad [d]              | STM32F407     | b, m         | –                                   | GPL-2.0             |
+| Mikrokopter [d]           | ATmega644     | b            | s, pp                               | –                   |
+| MatrixPilot [d]           | dsPIC33FJ256  | None         | –                                   | GPL-3.0             |
 
 > **Notes:**
 > - b: barometer; m: magnetometer; p: pitot tube sensor c: CAN; s: SPI; a: ADC; pp: PPM; sb: S.BUS; ds: DSM; da: DAC; x: XBEE; au: AUX, [d]: discontinued
@@ -46,8 +57,13 @@ Comparison of Open-Source Software (OSS) Flight Control Firmware. [[1]](#referen
 | ArduPilot   | [v4.5.7](https://github.com/ArduPilot/ardupilot/releases)             | ChibiOS / NuttX / Linux  | C/C++           | GPL-3.0  / CC-BY-SA-3.0 / GPL-3.0      |
 | PX4         | [v1.15.4](https://github.com/PX4/PX4-Autopilot/releases)              | NuttX                    | C/C++           | BSD 2-Clause / CC-BY-SA-3.0 / GPL-3.0  |
 | Paparazzi   | [v6.4.0](https://github.com/paparazzi/paparazzi/releases)             | ChibiOS / Scheduler      | C/Python        | GPL-3.0  / GFDL / GPL-3.0              |
+| DJI Onboard SDK ROS (OSDK) **(EOL)** | [v4.1.0](https://github.com/dji-sdk/Onboard-SDK-ROS)         | Linux / RTOS      | C/C++           | MIT                           |
+| DJI Payload SDK (PSDK)               | [v3.11.1](https://github.com/dji-sdk/Payload-SDK)            | Linux / RTOS      | C               | MIT                           |
+| ROSflight   | [v1.3.0](https://github.com/rosflight/rosflight_firmware/releases)                    | Linux             | C               | BSD 3-Clause                  |
+| Crazyflie Firmware   | [v2025.02](https://github.com/bitcraze/crazyflie-firmware/releases)          | Linux             | C               | GPL-3.0                       |
 
-
+> **Notes:**
+> - EOL = End of Life Service.  
 ----
 
 ## Ground Control Stations (GCS)
